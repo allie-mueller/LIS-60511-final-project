@@ -1,0 +1,22 @@
+{
+	"catalog": [
+		{
+			"id": 100,
+			"title": "1984",
+			"author": "George Orwell",
+			"isbn": "0451524934"
+		},
+		{
+			"id": 101,
+			"title": "Night",
+			"author": "Elie Wiesel",
+			"isbn": "0374500010"
+		},
+		{
+			"id": 102,
+			"title": "Frankenstein",
+			"author": "Mary Shelley",
+			"isbn": "0141439475"
+		}
+	]
+}
