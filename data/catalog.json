@@ -1,22 +1,154 @@
 {
-	"catalog": [
+  "catalog": [
 		{
 			"id": 100,
-			"title": "1984",
-			"author": "George Orwell",
-			"isbn": "0451524934"
+			"title": "My Brilliant Friend",
+			"author": "Elena Ferrante",
+			"isbn": "9781609450786",
+			"publication_year": 2011,
+			"pages": 331,
+			"publisher": "Europa Editions",
+			"genre": "Historical Fiction"
 		},
 		{
 			"id": 101,
-			"title": "Night",
-			"author": "Elie Wiesel",
-			"isbn": "0374500010"
+			"title": "Iron Widow",
+			"author": "Xiran Jay Zhao",
+			"isbn": "9780735269934",
+			"publication_year": 2021,
+			"pages": 400,
+			"publisher": "Penguin Teen",
+			"genre": "Science Fiction"
 		},
 		{
 			"id": 102,
-			"title": "Frankenstein",
-			"author": "Mary Shelley",
-			"isbn": "0141439475"
+			"title": "A Discovery of Witches",
+			"author": "Deborah Harkness",
+			"isbn": "9780670022410",
+			"publication_year": 2011,
+			"pages": 636,
+			"publisher": "Viking (Penguin Books)",
+			"genre": "Historical Fantasy Romance"
+		},
+		{
+			"id": 103,
+			"title": "The Brief Wondrous Life of Oscar Wao",
+			"author": "Junot Díaz",
+			"isbn": "9781594483295",
+			"publication_year": 2007,
+			"pages": 368,
+			"publisher": "Riverhead Books",
+			"genre": "Historical Fiction Adventure"
+		},
+		{
+			"id": 104,
+			"title": "The Underground Railroad",
+			"author": "Colson Whitehead",
+			"isbn": "9780385542364",
+			"publication_year": 2016,
+			"pages": 320,
+			"publisher": "Doubleday",
+			"genre": "Historical Fiction Adventure"
+		},
+		{
+			"id": 105,
+			"title": "Never Let Me Go",
+			"author": "Kazuo Ishiguro",
+			"isbn": "9781400078776",
+			"publication_year": 2005,
+			"pages": 288,
+			"publisher": "Faber & Faber",
+			"genre": "Science Fiction Romance"
+		},
+		{
+			"id": 106,
+			"title": "Tress of the Emerald Sea",
+			"author": "Brandon Sanderson",
+			"isbn": "9781250899651",
+			"publication_year": 2023,
+			"pages": 384,
+			"publisher": "Tor Books",
+			"genre": "Fantasy Adventure"
+		},
+		{
+			"id": 107,
+			"title": "The Night Circus",
+			"author": "Erin Morgenstern",
+			"isbn": "9780307744432",
+			"publication_year": 2011,
+			"pages": 387,
+			"publisher": "Doubleday",
+			"genre": "Fantasy Romance"
+		},
+		{
+			"id": 108,
+			"title": "The Martian",
+			"author": "Andy Weir",
+			"isbn": "9780804139021",
+			"publication_year": 2014,
+			"pages": 385,
+			"publisher": "Crown Publishing Group",
+			"genre": "Science Fiction Adventure"
+		},
+		{
+			"id": 109,
+			"title": "The Book Thief",
+			"author": "Markus Zusak",
+			"isbn": "9780375842207",
+			"publication_year": 2006,
+			"pages": 552,
+			"publisher": "Knopf Books",
+			"genre": "Historical Fiction"
+		},
+		{
+			"id": 110,
+			"title": "Circe",
+			"author": "Madeline Miller",
+			"isbn": "9780316556347",
+			"publication_year": 2018,
+			"pages": 393,
+			"publisher": "Little, Brown and Company",
+			"genre": "Fantasy Mythology"
+		},
+		{
+			"id": 111,
+			"title": "The Name of the Wind",
+			"author": "Patrick Rothfuss",
+			"isbn": "9780756404741",
+			"publication_year": 2007,
+			"pages": 662,
+			"publisher": "DAW Books",
+			"genre": "Fantasy"
+		},
+		{
+			"id": 113,
+			"title": "She Who Became the Sun",
+			"author": "Shelley Parker‑Chan",
+			"isbn": "9781250621801",
+			"publication_year": 2021,
+			"pages": 410,
+			"publisher": "Tor Books",
+			"genre": "Historical Fantasy"
+		},
+		{
+			"id": 114,
+			"title": "Gone Girl",
+			"author": "Gillian Flynn",
+			"isbn": "9780307588371",
+			"publication_year": 2012,
+			"pages": 422,
+			"publisher": "Crown Publishing Group",
+			"genre": "Adventure Thriller"
+		},
+		{
+			"id": 115,
+			"title": "The Silent Patient",
+			"author": "Alex Michaelides",
+			"isbn": "9781250301697",
+			"publication_year": 2019,
+			"pages": 336,
+			"publisher": "Celadon Books",
+			"genre": "Psychological Thriller"
 		}
-	]
+  ]
 }

@@ -14,6 +14,10 @@
       <tr>
         <th>Title</th>
         <th>Author</th>
+        <th>Publication Year</th>
+        <th>Pages</th>
+        <th>Publisher</th>
+        <th>Genre</th>
         <!--STEP 2: ADD MORE COLUMNS TO THE TABLE, USE THE LINES BELOW AS A GUIDE-->
         <!--<th>YOUR_ATTRIBUTE1</th>-->
         <!--<th>YOUR_ATTRIBUTE2</th>-->
@@ -29,11 +33,18 @@
     $.get('data/catalog.json', function (json) {
       var data = json;
 
+      console.log(data.catalog.length + ' books found.');
+      // console.log(data.catalog.sort((a, b) => a.title.localeCompare(b.title)));
+
       $.each(data.catalog, function (index, book) {
         var bookHtml = '';
         bookHtml += '<tr>';
         bookHtml += '<td><a href="book.php?isbn=' + book.isbn + '">' + book.title + '</a></td>';
         bookHtml += '<td>' + book.author + '</td>';
+        bookHtml += '<td>' + book.publication_year + '</td>';
+        bookHtml += '<td>' + book.pages + '</td>';
+        bookHtml += '<td>' + book.publisher + '</td>';
+        bookHtml += '<td>' + book.genre + '</td>';
 
         //STEP 3: DISPLAY MORE DATA, USE THE LINES BELOW AS A GUIDE
         //bookHtml += '<td>' + book.YOUR_ATTRIBUTE1 + '</td>';

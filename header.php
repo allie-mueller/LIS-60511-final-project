@@ -13,11 +13,13 @@
   <body>
     <div id="Content">
         <header>
-            <span>[ADD HEADLINE TEXT]</span>
+            <span>[ADD HEADLINE TEXT weeee]</span>
             <nav id="Menu">
               <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="browse.php">Browse</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <!-- ADD LINKS TO ADDITIONAL PAGES HERE-->
               </ul>
             </nav>
