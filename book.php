@@ -6,7 +6,9 @@
 <!-- FOLLOW THE EXAMPLES BELOW, AND MODIFY THIS PAGE TO DISPLAY ADDITIONAL DATA FROM THE OPENLIBRARY API -->
 
 <section id="Book">
-	<button onclick="history.back()">Go Back</button>
+	<div id="back-button-container">
+		<div class="back-button" id="action-button" onclick="history.back()"><- Go Back</div>
+	</div>
 	<div id="title-container">
 		<h2 id="BookTitle">[TITLE]</h2>
 	</div>
@@ -22,10 +24,10 @@
 			<p class="book-detail-label">Publisher:</p>
 			<p id="BookPublisher">[PUBLISHER]</p>
 			<p class="book-detail-label">Number of Pages:</p>
-			<p id="BookNumberOfPages">[NUMBER OF PAGES]</p>
-			<p class="book-detail-label">Subjects:</p>
-			<div id="BookSubjects"></div>
+			<p id="BookNumberOfPages">N/A</p>
 		</div>
+		<p class="book-detail-label">Subjects:</p>
+		<div id="BookSubjects"></div>
   	</div>
 	<div id="actions-container">
 		<div id="action-button" onclick="addToCart()">Add to Cart</div>
@@ -36,15 +38,71 @@
 </section>
 
 <script>
+	var currentBook;
+
 	const addToCart = () => {
+		var cart = localStorage.getItem("cart");
+		var cartJson = JSON.parse(cart);
+		if (!cartJson) {
+			cartJson = { 
+				cart: [],
+				savedForLater: [],
+				wishList: []
+			};
+		}
+
+		var item = {
+			isbn: currentBook.ISBN,
+			title: currentBook.title,
+			image: currentBook.cover.medium
+		};
+		cartJson.cart.push(item);
+		localStorage.setItem("cart", JSON.stringify(cartJson));
+		console.log(cartJson);
 		alert("Added to cart!");
 	};
 
 	const saveForLater = () => {
+		var cart = localStorage.getItem("cart");
+		var cartJson = JSON.parse(cart);
+		if (!cartJson) {
+			cartJson = { 
+				cart: [],
+				savedForLater: [],
+				wishList: []
+			};
+		}
+
+		var item = {
+			isbn: currentBook.ISBN,
+			title: currentBook.title,
+			image: currentBook.cover.medium
+		};
+		cartJson.savedForLater.push(item);
+		localStorage.setItem("cart", JSON.stringify(cartJson));
+		console.log(cartJson);
 		alert("Saved for later!");
 	};
 
 	const addToWishList = () => {
+		var cart = localStorage.getItem("cart");
+		var cartJson = JSON.parse(cart);
+		if (!cartJson) {
+			cartJson = { 
+				cart: [],
+				savedForLater: [],
+				wishList: []
+			};
+		}
+
+		var item = {
+			isbn: currentBook.ISBN,
+			title: currentBook.title,
+			image: currentBook.cover.medium
+		};
+		cartJson.wishList.push(item);
+		localStorage.setItem("cart", JSON.stringify(cartJson));
+		console.log(cartJson);
 		alert("Added to wishlist!");
 	};
 
@@ -64,6 +122,8 @@
         console.log(data);
 
         var book = data['ISBN:' + isbn];
+		book.ISBN = isbn;
+		currentBook = book;
 
         $('#BookTitle').text(book.title);
         $('#BookNotes').text(book.notes);
@@ -86,11 +146,6 @@
 			subjectDiv.id=subject.name.replace(/\s+/g, '-').toLowerCase();
 			subjectsContainer.appendChild(subjectDiv);
 		});
-
-        //STEP 3: DISPLAY MORE DATA, USE THE LINES BELOW AS A GUIDE
-        //$('#YOUR_ATTRIBUTE1').text(book.YOUR_ATTRIBUTE1);
-        //$('#YOUR_ATTRIBUTE2').text(book.YOUR_ATTRIBUTE2);
-        //$('#YOUR_ATTRIBUTE3').text(book.YOUR_ATTRIBUTE2);
       }
     });
   });

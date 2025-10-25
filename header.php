@@ -9,26 +9,34 @@
     <meta charset="UTF-8" />
     <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="icon" href="images/favicon.png" type="images/favicon.png" />
   </head>
   <body>
     <div id="Content">
         <header>
-            <span>[ADD HEADLINE TEXT weeee]</span>
+            <div id="header-title-container">
+              	<img id="headerimage" src="images/logo.jpg" alt="Books Unlimited Logo" />
+              	<div id="title-text">
+                	<span>Books Unlimited</span>
+              	</div>
+            </div>
             <nav id="Menu">
-              <div id="header-main-items">
-                <ul>
-                  <li><a href="index.php">Home</a></li>
-                  <li><a href="browse.php">Browse</a></li>
-                  <li><a href="about.php">About</a></li>
-                  <li><a href="contact.php">Contact</a></li>
-                  <!-- ADD LINKS TO ADDITIONAL PAGES HERE-->
-                </ul>
-              </div>
-              <div id="header-cart-button">
-                <ul>
-                  <li><a href="cart.php">Cart</a></li>
-                </ul>
-              </div>
+				<div id="nav-organization">
+					<div id="header-main-items">
+						<ul>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="browse.php">Browse</a></li>
+							<li><a href="about.php">About</a></li>
+							<li><a href="contact.php">Contact</a></li>
+							<!-- ADD LINKS TO ADDITIONAL PAGES HERE-->
+						</ul>
+              		</div>
+              		<div id="header-cart-button">
+                		<ul>
+                  			<li id="header-cart-item"><a href="cart.php">Cart</a></li>
+                		</ul>
+              		</div>
+				</div>
             </nav>
         </header>
         <div id="PageContent">
