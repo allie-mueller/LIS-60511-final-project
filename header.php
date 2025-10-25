@@ -28,7 +28,6 @@
 							<li><a href="browse.php">Browse</a></li>
 							<li><a href="about.php">About</a></li>
 							<li><a href="contact.php">Contact</a></li>
-							<!-- ADD LINKS TO ADDITIONAL PAGES HERE-->
 						</ul>
               		</div>
               		<div id="header-cart-button">

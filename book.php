@@ -1,9 +1,6 @@
-<!-- Add your name here: Book Loving Student -->
+<!-- Danielle Haight -->
 
 <?php include('header.php'); ?>
-
-<!-- TASK 2: COMBINE DATA MASHUPS (REST API) -->
-<!-- FOLLOW THE EXAMPLES BELOW, AND MODIFY THIS PAGE TO DISPLAY ADDITIONAL DATA FROM THE OPENLIBRARY API -->
 
 <section id="Book">
 	<div id="back-button-container">

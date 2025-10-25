@@ -1,11 +1,7 @@
-<!-- Add your name here: Dedicated Student -->
+<!-- Danielle Haight -->
 
-<!-- TASK 1: CONSTRUCT A WEBSITE LAYOUT -->
-
-<!-- STEP 1: EDIT THE HEADER.PHP FILE -->
 <?php include('header.php'); ?>
 
-<!-- STEP 2: EDIT THE INDEX.PHP FILE -->
 <section id="About">
   <div id="about-page-layout">
     <div id="about-image-container">
@@ -21,9 +17,6 @@
       </p>
     </div>
   </div>
-
-
 </section>
 
-<!-- STEP 3: EDIT THE FOOTER.PHP FILE-->
 <?php include('footer.php'); ?>

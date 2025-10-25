@@ -1,4 +1,4 @@
-<!-- Add your name here: Astute Student -->
+<!-- Danielle Haight -->
 
 <?php include('header.php'); ?>
 

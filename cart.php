@@ -1,11 +1,7 @@
-<!-- Add your name here: Dedicated Student -->
+<!-- Danielle Haight -->
 
-<!-- TASK 1: CONSTRUCT A WEBSITE LAYOUT -->
-
-<!-- STEP 1: EDIT THE HEADER.PHP FILE -->
 <?php include('header.php'); ?>
 
-<!-- STEP 2: EDIT THE INDEX.PHP FILE -->
 <section id="Home">
     <h1>Shopping Cart</h1>
     <p>Here you will find items you have added to your cart, saved for later, or added to your wishlist.</p>

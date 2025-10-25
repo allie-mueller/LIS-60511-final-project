@@ -1,11 +1,7 @@
-<!-- Add your name here: Dedicated Student -->
+<!-- Danielle Haight -->
 
-<!-- TASK 1: CONSTRUCT A WEBSITE LAYOUT -->
-
-<!-- STEP 1: EDIT THE HEADER.PHP FILE -->
 <?php include('header.php'); ?>
 
-<!-- STEP 2: EDIT THE INDEX.PHP FILE -->
 <section id="Contact">
   <h1>Contact Form</h1>
   <p>Thank you for shopping with Books Unlimited! We’re always looking for ways to make your reading and shopping experience even better. Please use this contact form to share your thoughts, questions, or concerns with us.
@@ -35,5 +31,4 @@
 
 </section>
 
-<!-- STEP 3: EDIT THE FOOTER.PHP FILE-->
 <?php include('footer.php'); ?>

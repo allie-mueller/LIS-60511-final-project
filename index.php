@@ -1,11 +1,6 @@
-<!-- Add your name here: Dedicated Student -->
+<!-- Danielle Haight -->
 
-<!-- TASK 1: CONSTRUCT A WEBSITE LAYOUT -->
-
-<!-- STEP 1: EDIT THE HEADER.PHP FILE -->
 <?php include('header.php'); ?>
-
-<!-- STEP 2: EDIT THE INDEX.PHP FILE -->
 <section id="Home">
   	<h1>Welcome to Books Unlimited</h1>
   	<p>
@@ -152,7 +147,6 @@
 		loadBook("9780385542364", 'staff-pick-1');
 		loadBook("9781400078776", 'staff-pick-2');
 		loadBook("9780316556347", 'staff-pick-3');
-
 
 	};
 
